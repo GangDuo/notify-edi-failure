@@ -1,0 +1,10 @@
+version: '3'
+services:
+  puppeteer:
+    build: app
+    image: puppeteer-dev:1.0
+    container_name: puppeteer
+    environment:
+      NODE_ENV: development
+    env_file:
+      - ./app/.env
